@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Select Your\n Catogory"
+                android:textColor="#000000"
+                android:textSize="18pt"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/passenger"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Passenger"
+                android:layout_marginTop="80dp"
+                android:textSize="8pt"
+                android:fontFamily="@font/roboto_medium"
+                android:background="@drawable/catogory_select_button_background"
+                android:onClick="onClickPassenger"/>
+
+            <Button
+                android:id="@+id/busOwner"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Bus Owner"
+                android:layout_marginTop="20dp"
+                android:textSize="8pt"
+                android:fontFamily="@font/roboto_medium"
+                android:background="@drawable/catogory_select_button_background"
+                android:onClick="onClickBusOwner"/>
+
+            <Button
+                android:id="@+id/driver"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Driver"
+                android:layout_marginTop="20dp"
+                android:textSize="8pt"
+                android:fontFamily="@font/roboto_medium"
+                android:background="@drawable/catogory_select_button_background"
+                android:onClick="onClickDriver"/>
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Alreay have an account?"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="8pt"
+                    android:fontFamily="@font/roboto_medium"/>
+
+                <Button
+                    android:id="@+id/Login"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Login"
+                    android:layout_marginTop="5dp"
+                    android:textSize="8pt"
+                    android:fontFamily="@font/roboto_medium"
+                    android:background="@drawable/button_background"
+                    android:onClick="onClickSignUp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
